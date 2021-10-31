@@ -1,0 +1,23 @@
+//Hero
+.hero{   
+    &__container{  
+        grid-template-columns: repeat(2, 1fr);     
+        row-gap: 3rem;          
+        place-items: center;  
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        font-weight: var(--font-bold);
+        margin-bottom: var(--mb-0-75);
+    }
+    &__description{
+        margin-bottom: var(--mb-2);
+    }
+    &__img{
+        border-radius: 40%;
+        transition:200ms transform;
+        &:hover{
+            transform:scale(1.05);
+        }
+    }
+}
