@@ -14,7 +14,9 @@
 
 ## Used packages cdn
 
-https://boxicons.com/
+https://boxicons.com/ <br>
+https://scrollrevealjs.org/
+
 
 <hr/>
 
