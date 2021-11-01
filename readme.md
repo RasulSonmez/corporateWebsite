@@ -10,7 +10,7 @@
 - Developed first with the Mobile First methodology, then for desktop.
 - It contains a Header, Home, About, Services, Contact and Footer.
 
-### [Live Website](https://rasulsonmez.github.io/deliveryWebsite-responesive/)
+### [Live Website](https://zealous-nobel-54c2c4.netlify.app/)
 
 ## Used packages cdn
 
