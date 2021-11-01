@@ -13,8 +13,7 @@
     &__description{
         margin-bottom: var(--mb-2);
     }
-    &__img{
-        border-radius: 40%;
+    &__img{        
         transition:200ms transform;
         &:hover{
             transform:scale(1.05);
