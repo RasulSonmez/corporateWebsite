@@ -647,4 +647,24 @@ body.dark-theme {
             column-gap: 3rem;
   }
 }
+
+.whatsap-icon {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.wp-float {
+  margin-top: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
