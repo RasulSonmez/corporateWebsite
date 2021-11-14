@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="turkey, bangladesh, international, consultancy, mediation, services" />
-    <meta name="description" content="The  TR Bangla provides international consultancy and mediation services in foreign trade especially, but also in the fields of real estate investment, petrochemistry, education, and healthcare services. " />
-    <meta name="Author" content="Nimetullah, info@trbangla.com"> 
+    <meta
+      name="keywords"
+      content="turkey, bangladesh, international, consultancy, mediation, services"
+    />
+    <meta
+      name="description"
+      content="The  TR Bangla provides international consultancy and mediation services in foreign trade especially, but also in the fields of real estate investment, petrochemistry, education, and healthcare services. "
+    />
+    <meta name="Author" content="Nimetullah, info@trbangla.com" />
     <title>TR BANGLA</title>
     <!-- Fav Icon -->
     <link
       rel="icon"
-      href="https://cdn-icons.flaticon.com/png/512/3227/premium/3227053.png?token=exp=1635183803~hmac=cd90fd226b29f09fbf782520d699cee2"
+      href="/assets/img/logo-trbangla.png"
       type="image/x-icon"
     />
     <!-- Box Icons -->
@@ -20,19 +26,76 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <!-- Custom Css -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"> </script>
+    <link rel="stylesheet" href="/assets/css/style.css" />    
   </head>
   <body>
     <!-- Header Start -->
     <header class="header" id="header">
-      
+      <nav class="nav container">
+        <a href="/index.html"
+          ><img
+            src="/assets/img/logo-trbangla.png"
+            class="nav__logo"
+            alt="logo"
+        /></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul id="ul-tr" class="nav__list">
+        
+            <li class="nav__item en">
+              <a href="/index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item en">
+              <a href="/about.html" class="nav__link">About Us</a>
+            </li>         
+
+            <li class="nav__item dropdown">
+              <div class=" dropdown__link">
+                  <a href="#" class="nav__link">Services  </a>
+                  <i class='bx bxs-down-arrow nav__link dropdown__icon'></i>
+              </div>
+
+
+              <ul class="dropdown__menu">
+                  <li><a href="/real-estate.html" class="nav__link">Real Estate</a></li>
+                  <li><a href="/tourism.html" class="nav__link">Tourism</a></li>                 
+                  <li><a href="/agro-business.html" class="nav__link">Agro Business</a></li>
+                  <li><a href="/engineering-machineries.html" class="nav__link">Engineering-Machineries</a></li>
+                  <li><a href="/education.html" class="nav__link">Education</a></li>
+                  <li><a href="/trading.html" class="nav__link">Trading</a></li>
+              </ul>
+          </li>
+
+
+            <li class="nav__item en">
+              <a href="/contact.html" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__theme-change en">
+              <i class="bx bx-sun"></i>
+              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+              <i class="bx bxs-moon"></i>
+            </li>      
+            <li class="nav__language">
+              <select
+                id="cultureSelect"
+                onchange="changeCulture()"
+                name="language"
+              >
+                <option id="option-en" value="en">English</option>
+                <option id="option-tr" value="tr">Türkçe</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
     </header>
     <!-- Header Finish -->
 
     <!-- Main Start -->
     <main class="main">
-     
       <!-- Hero Start -->
       <section class="hero section" id="home">
         <div class="hero__container container grid">
@@ -41,8 +104,23 @@
               Consultancy <br />
               International
             </h1>
-            <p class="hero__description">
-              Expert service of distinct quality and excellence!
+            <p class="hero__description" style="text-align: justify;">
+              The world has gotten smaller. So small it almost fits in your
+              pocket. Digital communication, better transport and infrastructure
+              have multiplied the opportunities for activating business
+              worldwide. However, there are still many national regulations and
+              rules. This often makes access to other markets difficult.
+              Activate your global business now. Whether for Export-İmport,
+              Trade-commerce, consultancy services or modern mobility and
+              knowledge transfer - our Market Access Services experts in TR
+              Bangla have comprehensive technical know-how in all areas of
+              business helping to ensure secure, international access to target
+              Turkish markets. From Machineries, Services, products or
+              real-estate, through support to market maturity, to the actual
+              market launch- TR Bangla acts without language barriers without
+              excessive bureaucracy-Fast. Simple & Safe. Take advantage of our
+              Business reputation in Turkey and our experience to activate your
+              access to the Turkish markets now.
             </p>
             <a href="#" class="button">Contact Us</a>
           </div>
@@ -56,32 +134,34 @@
       <!-- Hero Finish -->
 
       <!-- About Us Start -->
-      <div class="bg-color-about">     
-      <section class="about section container" id="about">
-        <div class="about__container grid">
-          <div class="about__data ani-left">
-            <h2 class="section__title-center">
-              Who Are We? <br />
-              About Us <br />
-              _
-            </h2>
-            <p class="about__description ">
-              Neamat Ullah, who has been a professional since 2012 is entrepreneurial and performance-driven executive, with
-              a broad ranging experience in all aspects of managing sales, marketing, business development and field operations
-              at International Trade and NGO affairs.
-              Neamat Ullah has studied in Bangladesh, Turkey and Malaysia. He established his own NGO & company (MARSA and TR Bangla) He has
-              been carrying on his business successfully.
-            </p>
-            <a href="/about.html" class="button button-detail">Details</a>
+      <div class="bg-color-about">
+        <section class="about section container" id="about">
+          <div class="about__container grid">
+            <div class="about__data ani-left">
+              <h2 class="section__title-center">
+                Who Are We? <br />
+                About Us <br />
+                _
+              </h2>
+              <p class="about__description">
+                Neamat Ullah, who has been a professional since 2012 is
+                entrepreneurial and performance-driven executive, with a broad
+                ranging experience in all aspects of managing sales, marketing,
+                business development and field operations at International Trade
+                and NGO affairs. Neamat Ullah has studied in Bangladesh, Turkey
+                and Malaysia. He established his own NGO & company (MARSA and TR
+                Bangla) He has been carrying on his business successfully.
+              </p>
+              <a href="/about.html" class="button button-detail">Details</a>
+            </div>
+            <img
+              src="https://image.freepik.com/free-vector/business-team-brainstorm-idea-lightbulb-from-jigsaw-working-team-collaboration-enterprise-cooperation-colleagues-mutual-assistance-concept-pinkish-coral-bluevector-isolated-illustration_335657-1651.jpg"
+              class="about__img ani-right"
+              alt="about-us"
+            />
           </div>
-          <img
-            src="https://image.freepik.com/free-vector/business-team-brainstorm-idea-lightbulb-from-jigsaw-working-team-collaboration-enterprise-cooperation-colleagues-mutual-assistance-concept-pinkish-coral-bluevector-isolated-illustration_335657-1651.jpg"
-            class="about__img ani-right"
-            alt="about-us"
-          />
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
       <!-- About Us Finish -->
 
       <!-- Services Start -->
@@ -115,7 +195,7 @@
               We're called Best Travel company for a reason. It's because we're
               constantly looking for ways to make your holiday as perfect as
               possible, from the way we plan the trip to the authentic
-              experiences you'll enjoy while away. 
+              experiences you'll enjoy while away.
             </p>
             <a href="/services.html" class="button button-link">Learn More</a>
           </div>
@@ -182,8 +262,9 @@
               viscose, cotton spandex.
             </p>
             <p class="services__description">
-              TR BANGLA Chem specializes in the distribution of both liquid 
-              and solid chemicals to the textile industries using these chemicals as raw materials in their production.
+              TR BANGLA Chem specializes in the distribution of both liquid and
+              solid chemicals to the textile industries using these chemicals as
+              raw materials in their production.
             </p>
             <a href="/services.html" class="button button-link">Learn More</a>
           </div>
@@ -193,90 +274,118 @@
 
       <!-- Contact Start -->
       <div class="bg-color-contact">
-      <section class="contact section container" id="contact">
-        <div class="contact__container grid">
-          <div class="contact__content ani-left">
-            <h2 class="section__title-center">
-              Contact Us From <br />
-              Here <br />
-              _
-            </h2>
-            <p class="contact__description">
-              You can contact us from here, you can write to us, call us or
-              visit our service center, we will gladly assist you.
-            </p>
+        <section class="contact section container" id="contact">
+          <div class="contact__container grid">
+            <div class="contact__content ani-left">
+              <h2 class="section__title-center">
+                Contact Us From <br />
+                Here <br />
+                _
+              </h2>
+              <p class="contact__description">
+                You can contact us from here, you can write to us, call us or
+                visit our service center, we will gladly assist you.
+              </p>
 
-            <ul class="section grid">
-              <li class="contact__address">
-                <i class="bx bx-phone-incoming"></i>
-                Telephone:
-                <span class="contact__information">+90 212 621 79 33</span>
-              </li>
-              <li class="contact__address">
-                <i class="bx bx-mail-send"></i>
-                <a href="mailto:info@trbangla.com" class="contact__address">
-                  E-mail:
-                  <span class="contact__information">info@trbangla.com</span>
-                </a>
-              </li>
-              <li class="contact__address">
-                <i class="bx bx-location-plus"></i>
-                Location:
-                <span class="contact__information"
-                  >Karagümrük Mah. Çorapsız Kadı Asker Sokak B3-117-f4-124 NO:10/3 Fatih, İstanbulL, Türkiye.</span
-                >
-              </li>
-              <li class="contact__addres">
-                <a href="#" class="button">Contact Us</a>
-              </li>
-            </ul>
+              <ul class="section grid">
+                <li class="contact__address">
+                  <i class="bx bx-phone-incoming"></i>
+                  Telephone:
+                  <span class="contact__information">+90 212 621 79 33</span>
+                </li>
+                <li class="contact__address">
+                  <i class="bx bx-mail-send"></i>
+                  <a href="mailto:info@trbangla.com" class="contact__address">
+                    E-mail:
+                    <span class="contact__information">info@trbangla.com</span>
+                  </a>
+                </li>
+                <li class="contact__address">
+                  <i class="bx bx-location-plus"></i>
+                  Location:
+                  <span class="contact__information"
+                    >Karagümrük Mah. Çorapsız Kadı Asker Sokak B3-117-f4-124
+                    NO:10/3 Fatih, İstanbulL, Türkiye.</span
+                  >
+                </li>
+                <li class="contact__addres">
+                  <a href="#" class="button">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact__content ani-right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.8694226409316!2d28.932449114784074!3d41.028112626154105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba143a51fedb%3A0xa226df3ece4bfd73!2zS2FyYWfDvG1yw7xrLCDDh29yYXBzxLF6IEthZMSxIEFza2VyIFNrLiBObzoxMCwgMzQwOTEgRmF0aWgvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1636901412934!5m2!1str!2str"
+                width="100%"
+                height="504"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
           </div>
-       
-          <div class="contact__content ani-right">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.8694226409316!2d28.932449114784074!3d41.028112626154105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba143a51fedb%3A0xa226df3ece4bfd73!2zS2FyYWfDvG1yw7xrLCDDh29yYXBzxLF6IEthZMSxIEFza2VyIFNrLiBObzoxMCwgMzQwOTEgRmF0aWgvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1636901412934!5m2!1str!2str"
-              width="100%"
-              height="504"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
       <!-- Contact Finish -->
     </main>
     <!-- Main Finish -->
 
     <!-- Footer Start -->
     <footer id="footer" class="footer section">
-      
+      <div class="footer__container container grid en">
+        <div class="footer__content">
+          <a href="#"><img src="/assets/img/logo-trbangla.png" class="footer__logo" alt="logo"></a>
+          <p class="footer__description">
+            Expert service of distinct quality and excellence!
+          </p>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Real Estate</a></li>
+            <li><a href="#" class="footer__link">Tourism</a></li>
+            <li><a href="#" class="footer__link">Agro Business</a></li>
+            <li>
+              <a href="#" class="footer__link">Engineering-Machineries</a>
+            </li>
+            <li><a href="#" class="footer__link">Education</a></li>
+            <li><a href="#" class="footer__link">Trading</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>       
+    </div> 
+      <p class="footer__copy">
+        &#169; twoManOneWorkSoftware All right reserved
+      </p>
     </footer>
     <!-- Footer  Finish -->
 
     <!-- Whatsapp Start-->
-    <a href="https://api.whatsapp.com/send?phone=5070246857&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="whatsap-icon" target="_blank">
-      <i class='bx bxl-whatsapp wp-float'></i>
-      </a>
+    <a
+      href="https://api.whatsapp.com/send?phone=5070246857&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+      class="whatsap-icon"
+      target="_blank"
+    >
+      <i class="bx bxl-whatsapp wp-float"></i>
+    </a>
     <!-- Whatsap Finish -->
 
     <!--Scrollreveal js-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--Custom js-->
-    <script src="/assets/js/main.js"></script> 
-
-
-    <script>
-      //wait until the dom is loaded
-        $(document).ready(function () {
-            //adds menu.html content into any "#menu" element
-            $('#header').load('header.html');
-
-            $('#footer').load('footer.html');
-        });
-    </script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

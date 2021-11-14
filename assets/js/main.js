@@ -10,13 +10,17 @@ const showMenu = (toggleId, navId) => {
 };
 showMenu("nav-toggle", "nav-menu");
 
-//Remove Menu Mobile
-const navLink = document.querySelectorAll(".nav__link");
-function linkAction() {
-  const navMenu = document.getElementById("nav-menu");
-  navMenu.classList.remove("show-menu");
+/*===== ACTIVE AND REMOVE MENU =====*/
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('.nav__link');
+const menuLength = menuItem.length
+for (let i = 0; i < menuLength; i++) {
+    if (menuItem[i].href === currentLocation) {
+        menuItem[i].className="active-link"
+    }
 }
-navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+
 
 //Change Background Header
 function scrollHeader() {
@@ -86,51 +90,3 @@ ScrollReveal().reveal(".ani-fade-up", {
   duration: 1500,
 });
 
-
-function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i <ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function eraseCookie(name) {   
-  document.cookie = name+'=; Max-Age=-99999999;';  
-}
-
-function getPageOfCulture(){
-  var selectedCulture=getCookie("culture");
-
-  if(selectedCulture==null){  
-        var userLang = navigator.language || navigator.userLanguage; 
-        selectedCulture=userLang;
-  }
- 
-  if(selectedCulture==="tr"){
-    $(".tr").show();
-    $(".en").hide();
-    $("#option-tr").attr("selected",true);
-    $("#option-en").attr("selected",false);
-  }
-  else{
-    $(".tr").hide();
-    $(".en").show();
-    $("#option-tr").attr("selected",false);
-    $("#option-en").attr("selected",true);
-  }
-}

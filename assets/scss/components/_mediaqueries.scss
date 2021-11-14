@@ -27,6 +27,48 @@
     .services__description{
         padding: 0 2rem 0 2rem;
     }
+
+    
+    .dropdown {
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;         
+        }
+
+        &__icon {
+            font-size: .5rem;
+            transition: .5s;
+            margin-left:.5rem;
+        }
+
+        &__menu {
+            display: block;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 500ms, opacity 300ms;
+            -webkit-transition: max-height 500ms, opacity 300ms;
+            text-align: center;
+            line-height: 3rem;
+
+            a {
+                border-bottom: 1px solid rgba(85, 85, 85, .4);
+            }
+        }
+
+        &:hover > &__menu {
+            max-height: 500px;
+            opacity: 1;
+            transition: max-height 0, opacity 300ms;
+            -webkit-transition: max-height 0, opacity 300ms;
+        }
+
+        &:hover &__icon {
+            transform: rotate(180deg);
+        }
+    }
 }
 
 @media screen and (min-width: 767px) {
@@ -72,6 +114,57 @@
         &__container{
             grid-template-columns: repeat(3, 1fr);
         }        
+    }
+
+    
+    .dropdown {
+        position: relative;
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__icon {
+            font-size: var(--mb-0-5);
+            transition: .5s;
+            margin-left: 0.4rem;
+            margin-top: 0.1rem;
+        }
+
+        &__menu {
+            position: absolute;
+            margin:.4rem 0 0 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 250ms all;
+            background-color: var(--bg-color-one);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 1rem;
+            line-height: 2.5rem;
+            width: 20rem;
+            display: block;
+            text-align: left;
+            font-size: var(--small-font-size);
+
+            a {
+                color: var(--text-color);
+            }
+        }
+
+        &__item {
+            margin: 1rem 0;
+        }
+
+        &:hover > &__menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:hover &__icon {
+            transform: rotate(180deg);
+        }
     }
 }
 

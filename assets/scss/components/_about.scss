@@ -2,11 +2,6 @@
 .about{
     &__container{
         grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
+        gap: 2.5rem;       
     }
-}
-
-//General Css
-.bg-color-about{
-    background: var(--bg-color-one);
 }
