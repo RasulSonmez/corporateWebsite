@@ -21,46 +21,12 @@
     />
     <!-- Custom Css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"> </script>
   </head>
   <body>
     <!-- Header Start -->
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" ><img src="/assets/img/logo-trbangla.png" class="nav__logo" alt="logo"></a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="/index.html" class="nav__link ">Home</a>
-            </li>           
-            <li class="nav__item">
-              <a href="/about.html" class="nav__link active-link">About Us</a>
-            </li>
-            <li class="nav__item">
-              <a href="/services.html" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item">
-              <a href="/contact.html" class="nav__link">Contact Us</a>
-            </li>
-            <li class="nav__theme-change">
-              <i class="bx bx-sun"></i>
-              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
-              <i class="bx bxs-moon"></i>
-            </li>
-            <li class="nav__language">
-              <select name="language">
-                <option value="">English</option>
-                <option value="">Türkçe</option>                              
-              </select>
-            
-            </li>
-          
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div>
-      </nav>
+     
     </header>
     <!-- Header Finish -->
 
@@ -77,15 +43,24 @@
               _
             </h2>
             <p class="about__description ">
-              The Turan Group provides international consultancy and mediation
-              services in foreign trade especially, but also in the fields of
-              real estate investment, petrochemistry, education, and healthcare
-              services. Our A Plus & Turan Group headquarters and country
-              coordinators offer our business partners the fastest and most
-              effective solutions at low operational costs in all the countries
-              where we operate.
+              Neamat Ullah, who has been a professional since 2012 is entrepreneurial and performance-driven executive, with
+              a broad ranging experience in all aspects of managing sales, marketing, business development and field operations
+              at International Trade and NGO affairs.
+              Neamat Ullah has studied in Bangladesh, Turkey and Malaysia. He established his own NGO & company (MARSA and TR Bangla) He has
+              been carrying on his business successfully. 
             </p>
-            <a href="#" class="button button-detail">Details</a>
+            <br>
+            <p class="details-p" style="display:none">
+              Our company works with the “most” leading, “most” qualified and “most” professional factories of the industry in Turkey and it provides service in terms 
+              of exporting products to overseas markets.
+               Our founding purpose is to spread Turkish labor, Turkish power, Turkish services and genuine Turkish quality to the world and give it the place it deserves in the world market.
+            </p>
+            <br>
+            <p class="details-p" style="display:none">
+              The factories we work with have the certification for CE, ISO 9001,ISO 14001 
+              and ISO18001 and meet the required standards for countries. You can be sure that we will have you enjoy the combination of real quality with real competitive conditions.
+            </p>
+            <a style="cursor: pointer;" onclick="showHideDetails()" class="button button-detail">Details</a>
           </div>
           <img
             src="https://image.freepik.com/free-vector/business-team-brainstorm-idea-lightbulb-from-jigsaw-working-team-collaboration-enterprise-cooperation-colleagues-mutual-assistance-concept-pinkish-coral-bluevector-isolated-illustration_335657-1651.jpg"
@@ -100,43 +75,8 @@
     <!-- Main Finish -->
 
     <!-- Footer Start -->
-    <footer class="footer section">
-      <div class="footer__container container grid">
-        <div class="footer__content">
-          <a href="#"><img src="/assets/img/logo-trbangla.png" class="footer__logo" alt="logo"></a>
-          <p class="footer__description">
-            Expert service of distinct quality and excellence!
-          </p>
-        </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Our Services</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Real Estate</a></li>
-            <li><a href="#" class="footer__link">Tourism</a></li>
-            <li><a href="#" class="footer__link">Agro Business</a></li>
-            <li>
-              <a href="#" class="footer__link">Engineering-Machineries</a>
-            </li>
-            <li><a href="#" class="footer__link">Education</a></li>
-            <li><a href="#" class="footer__link">Trading</a></li>
-          </ul>
-        </div>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link"
-            ><i class="bx bxl-facebook-circle"></i
-          ></a>
-          <a href="#" class="footer__social-link"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-          <a href="#" class="footer__social-link"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
-        </div>       
-      </div>
-     
-      <p class="footer__copy">
-        &#169; twoManOneWorkSoftware All right reserved
-      </p>
+    <footer id="footer" class="footer section">
+      
     </footer>
     <!-- Footer  Finish -->
 
@@ -150,5 +90,24 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--Custom js-->
     <script src="/assets/js/main.js"></script>  
+
+    <script>
+      //wait until the dom is loaded
+        $(document).ready(function () {
+            //adds menu.html content into any "#menu" element
+            $('#header').load('header.html');
+
+            $('#footer').load('footer.html');
+        });
+
+        function showHideDetails(){
+          if($(".details-p").css("display")==="none"){
+            $(".details-p").css("display","block");
+          }
+          else{
+            $(".details-p").css("display","none");
+          }
+        }
+    </script>
   </body>
 </html>
