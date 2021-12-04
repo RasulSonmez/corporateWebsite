@@ -1,6 +1,6 @@
 //Footer
 .footer{
-    background: var(--bg-color-one);
+    background: #005682;
     padding-bottom: 2rem;
     &__container{
         row-gap: 2rem;
@@ -9,6 +9,10 @@
     &__title{
         font-size: var(--h3-font-size);
         margin-bottom: var(--mb-0-75);
+    }
+
+    &__title{
+     color: var(--text-color-white);
     }
     &__logo{             
         height: 80px;
@@ -19,6 +23,10 @@
         font-size: var(--small-font-size);
         color: var(--text-color);
     }
+
+    &__description{
+        color: var(--text-color-white);
+    }
     &__links{
         display: grid;
         row-gap: .5rem;
@@ -27,7 +35,7 @@
         a {
             display: inline-block;
             font-size: 14px;
-            color: var(--text-color);
+            color: var(--text-color-white);
             z-index: 1;
             position: relative;
 
@@ -60,7 +68,7 @@
         column-gap: 1.5rem;    
         &-link{                                
             font-size: 2rem;
-            color: var(--title-color); 
+            color: var(--text-color-white);
             transition: .4s;
             &:hover{
                 color: rgba(#545D7A, .4);
@@ -71,7 +79,7 @@
         margin-top: 1rem;
         text-align: center;
         font-size: var(--small-font-size);
-        color: var(--text-color);
+        color: var(--text-color-white);
         border-top: 1px solid #cbcbcb;
         padding: 1rem 0 0 0;
     }

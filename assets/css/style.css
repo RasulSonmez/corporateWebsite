@@ -167,7 +167,7 @@ body.dark-theme {
 
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: #005682;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
@@ -177,13 +177,13 @@ body.dark-theme {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: rgba(0, 57, 87, 0.9);
 }
 
 .button-detail {
   background-color: #ffff;
   color: #000000b0;
-  border: 1px solid var(--first-color-lighten);
+  border: 1px solid rgba(0, 57, 87, 0.9);
   row-gap: 2rem;
   margin-top: var(--mb-0-75);
 }
@@ -230,7 +230,7 @@ body.dark-theme {
 }
 
 .footer {
-  background: var(--bg-color-one);
+  background: #005682;
   padding-bottom: 2rem;
 }
 
@@ -243,6 +243,10 @@ body.dark-theme {
   margin-bottom: var(--mb-0-75);
 }
 
+.footer__title {
+  color: var(--text-color-white);
+}
+
 .footer__logo {
   height: 80px;
   margin-top: var(--mb-1);
@@ -251,6 +255,10 @@ body.dark-theme {
 .footer__description, .footer__link {
   font-size: var(--small-font-size);
   color: var(--text-color);
+}
+
+.footer__description {
+  color: var(--text-color-white);
 }
 
 .footer__links {
@@ -262,7 +270,7 @@ body.dark-theme {
 .footer__links a {
   display: inline-block;
   font-size: 14px;
-  color: var(--text-color);
+  color: var(--text-color-white);
   z-index: 1;
   position: relative;
 }
@@ -302,7 +310,7 @@ body.dark-theme {
 
 .footer__social-link {
   font-size: 2rem;
-  color: var(--title-color);
+  color: var(--text-color-white);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -315,7 +323,7 @@ body.dark-theme {
   margin-top: 1rem;
   text-align: center;
   font-size: var(--small-font-size);
-  color: var(--text-color);
+  color: var(--text-color-white);
   border-top: 1px solid #cbcbcb;
   padding: 1rem 0 0 0;
 }
@@ -752,7 +760,7 @@ body.dark-theme {
     opacity: 0;
     -webkit-transition: 250ms all;
     transition: 250ms all;
-    background-color: var(--bg-color-one);
+    background-color: rgba(0, 86, 130, 0.9);
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 1rem;
@@ -763,7 +771,7 @@ body.dark-theme {
     font-size: var(--small-font-size);
   }
   .dropdown__menu a {
-    color: var(--text-color);
+    color: var(--text-color-white);
   }
   .dropdown__item {
     margin: 1rem 0;

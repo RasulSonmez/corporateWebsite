@@ -1,19 +1,19 @@
 //Button
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color:#005682;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
   font-weight: var(--font-semi-bold);
   transition: 0.3s;
   &:hover {
-    background-color: var(--first-color-alt);
+    background-color: rgba(0,57,87, .9);
   }
   &-detail {
     background-color: #ffff;
     color: #000000b0;
-    border: 1px solid var(--first-color-lighten);
+    border: 1px solid rgba(0,57,87, .9);
     row-gap: 2rem;
     margin-top: var(--mb-0-75);
 
